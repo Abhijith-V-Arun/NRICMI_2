@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRICMI landing page</title>
+    <link rel="stylesheet" href="NRICMI_Landing_page.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header></header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><i class="fas fa-university"></i> NRICMI</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About NRICMI</a></li>
+        <li><a href="#facilities"><i class="fas fa-info-circle"></i> Facilities</a></li>
+        <li><a href="#gallery"><i class="fas fa-image"></i> Gallery</a></li>
+        <li class="dropdown">
+          <a href="#programs" class="dropbtn"><i class="fas fa-graduation-cap"></i> Programs</a>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-book"></i> Program 1</a>
+            <a href="#"><i class="fas fa-book-open"></i> Program 2</a>
+            <a href="#"><i class="fas fa-chalkboard-teacher"></i> Program 3</a>
+          </div>
+        </li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Slideshow Section -->
+  <section class="banner">
+    <div class="overlay"></div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="pics/795887.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="pics/909067.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="pics/abstract-abstraction-biology-chemistry-wallpaper-preview.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="pics/luminous-blue-dna-helix-hd-medical-u5giufybd7c7uf5g.jpg" style="width:100%">
+      </div>
+      
+    </div>
+
+    <!-- Fixed Heading -->
+    <div class="fixed-heading">
+      <h1>N. Radhakrishnan International Centre for Medical Innovation</h1>
+      <h1>(NRICMI)</h1>
+      
+    </div>
+
+    <!-- Search Bar in the Banner -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+  </section>
+
+  <script>
+    // Slideshow Functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+<section class="about-notifications" id="about">
+  <div class="about-container">
+    <!-- Left Column: About NRICMI Content and Image -->
+    <div class="about-section">
+      <h2>NRICMI</h2>
+      <p>
+        <b><i>Breaking Boundaries: A New Era in Vascular Health at MG University</i></b>
+      </p>
+      <p>
+        &emsp;&emsp;In the realm of medical research and innovation, Mahatma Gandhi University has embarked on a transformative journey with the inauguration of the Dr. N Radhakrishnan International Centre for Medical Innovation (NRICMI). The centreendowed with a significant philanthropic grant of one crore from theDr. N Radhakrishnan Foundation for Research on Venous Diseasesis committed to advancing knowledge and pioneering solutions in the field of vascular diseases. Named in honour of the distinguished vascular surgeon Dr. N Radhakrishnan, the centre stands as a testament to the commitment to advancing medical knowledge and addressing critical issues related to vascular diseases.
+      </p>
+      <a href="NRICMI_About.html" class="more-info-btn">More Info</a>
+    </div>
+
+    <!-- Right Column: Notifications -->
+    <div class="notifications-section">
+      <h3>Notifications</h3>
+      <ul class="Notify-links">
+        <a href="#notify"><li>Research Scientist II: Applications are being invited for the position of Research scientist II</li></a>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="radhakrishnan-section">
+  <div class="radhakrishnan-container">
+    <!-- Left Column: Image of N Radhakrishnan -->
+    <div class="radhakrishnan-image">
+      <img src="pics/radhakrishnan.png" alt="N Radhakrishnan Image">
+    </div>
+
+    <!-- Right Column: Content About N Radhakrishnan -->
+    <div class="radhakrishnan-content">
+      <h2>Dr.N.Radhakrishnan</h2>
+      <p>
+        &emsp;&emsp;Dr. N Radhakrishnan, a distinguished figure in the field of vascular surgery, has dedicated over five decades to the practice and advancement of medical science. His academic journey began at the esteemed Medical College, Thiruvananthapuram, Kerala, India, where he completed both his MBBS and post-graduation in General Surgery (M.S.). Since 1980, he has served as the Senior Consultant Vascular Surgeon at St. Thomas Hospital, Chethipuzha, Changanassery, Kerala, India.
+      </p>
+      <a href="#" class="more-info-btn">More Info</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-section">
+    <h2>Featured</h2>
+    <div class="featured-container">
+      <!-- Column 1 (YouTube Video 1) -->
+      <div class="video-column">
+        <a href="https://www.youtube.com/watch?v=uD9dCiVKolM" target="_blank" class="video-link">
+          <img src="https://img.youtube.com/vi/uD9dCiVKolM/hqdefault.jpg" alt="Video 1">
+          <div class="play-button-overlay">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          
+        </a>
+        <p><b>Varicose vein Treatment : Doctor Live 1st Sep 2015</b></p>
+      </div>
+  
+      <!-- Column 2 (YouTube Video 2) -->
+      <div class="video-column">
+        <a href="https://www.youtube.com/watch?v=zUl5APARSOw" target="_blank" class="video-link">
+          <img src="https://img.youtube.com/vi/zUl5APARSOw/hqdefault.jpg" alt="Video 2">
+          <div class="play-button-overlay">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          
+        </a>
+        <p><b>Dr: N Radhakrishnan , He completed 20,000 varicose vein surgery</b></p>
+      </div>
+  
+      <!-- Column 3 (YouTube Video 3) -->
+      <div class="video-column">
+        <a href="https://www.youtube.com/watch?v=HOlBhKo7BSQ" target="_blank" class="video-link">
+          <img src="https://img.youtube.com/vi/HOlBhKo7BSQ/hqdefault.jpg" alt="Video 3">
+          <div class="play-button-overlay">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          
+        </a>
+        <p><b>Varicose Veins: Symptoms, Diagnosis & Treatment Options</b></p>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="facilities-section" id="facilities">
+  <h2>Facilities & Services</h2>
+  <div class="facilities-container">
+    <!-- Column 1 -->
+    <div class="facility-column">
+      <img src="pics/pngtree-3d-rendered-backdrop-of-digital-innovation-picture-image_7047114.jpg" alt="Facility 1">
+      <h3>Research</h3>
+      <p>
+        We equip labs with state-of-the-art tools, foster collaboration, and offer expert guidance.
+      </p>
+      <a href="#" class="learn-more-btn">More Info</a>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="facility-column">
+      <img src="pics/HD-wallpaper-medical-top-medical-background-hospital.jpg" alt="Facility 2">
+      <h3>Educational Programes & Workshops</h3>
+      <p>
+        We provide empowering educational programs for lifelong learning.
+      </p>
+      <a href="#" class="learn-more-btn">More Info</a>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="facility-column">
+      <img src="pics/Chickpeas1200x8001.jpg" alt="Facility 3">
+      <h3>Startup Incubation</h3>
+      <p>
+        We support startups with mentorship, funding, and resources.
+      </p>
+      <a href="#" class="learn-more-btn">More Info</a>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="facility-column">
+      <img src="pics/medical-consultation-bahrain.jpg" alt="Facility 4">
+      <h3>Consultation</h3>
+      <p>
+        We provide tailored expert advice.
+      </p>
+      <a href="#" class="learn-more-btn">More Info</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="footer-section" id="contact">
+  <div class="footer-container">
+    <!-- Left Side: NRICMI and Social Icons -->
+    <div class="footer-left">
+      <h3>NRICMI</h3>
+      <div class="social-icons">
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Us -->
+    <div class="footer-right">
+      <h3>Contact Us</h3>
+      <p>Convergence Zone</p>
+      <p>Mahatma Gandhi University</p>
+      <p>Priyadarshini Hills</p>
+      <p>Athirampuzha</p>
+      <p>Kottayam, Kerala</p>
+      <p></p>
+      <p>Mobile: +123 456 7890</p>
+      <p>Email: contact@nricmi.com</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
